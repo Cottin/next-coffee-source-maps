@@ -13,7 +13,6 @@ const nextConfig = {
 			exclude: /node_modules/,
 			use: [
 				defaultLoaders.babel, // <---- does NOT handle source maps from coffee-loader
-				{loader: 'source-map-loader'},
 				// {loader: 'babel-loader'}, // <----- handles source maps fine
 				{loader: 'coffee-loader'},
 			],
